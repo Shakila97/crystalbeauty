@@ -1,0 +1,28 @@
+{
+  "name": "crystalbeauty",
+  "version": "1.0.0",
+  "description": "E_commerce website MERN stack",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakila97/crystalbeauty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shakila97/crystalbeauty/issues"
+  },
+  "homepage": "https://github.com/Shakila97/crystalbeauty#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.9"
+  }
+}
