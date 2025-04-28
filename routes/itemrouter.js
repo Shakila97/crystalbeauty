@@ -8,9 +8,11 @@ itemRouter.get("/",getAllItem)
 
 itemRouter.post("/",saveItem)
 
+itemRouter.get("/:name",searchItem)
+
 itemRouter.get("/good",getGoodItem)
 
-itemRouter.get("/:name",searchItem)
+
 
 
 

@@ -3,6 +3,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import studentRouter from './routes/studentrouter.js';
 import itemRouter from './routes/itemrouter.js';
+import userRouters from './routes/userRouter.js';
 /*import studentModel from './models/student.js';*/
 
 
@@ -23,9 +24,8 @@ mongoose.connect("mongodb+srv://Admin:Shakila%4097@mern.qec4ncf.mongodb.net/?ret
 
 app.use(bodyParser.json());
 app.use('/item',itemRouter);
-
-
 app.use('/student',studentRouter);
+app.use('/api/user',userRouters)
 
 app.listen(3000, 
     ()=>{
