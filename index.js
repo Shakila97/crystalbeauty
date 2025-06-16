@@ -23,6 +23,15 @@ mongoose.connect("mongodb+srv://Admin:Shakila%4097@mern.qec4ncf.mongodb.net/?ret
 )
 
 app.use(bodyParser.json());
+
+app.use(
+    (req,res,next)=>{
+        next();
+    }
+)
+
+
+
 app.use('/item',itemRouter);
 app.use('/student',studentRouter);
 app.use('/api/user',userRouters)
